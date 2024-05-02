@@ -7,7 +7,7 @@ interface NavBarItemProps {
 
 function NavBarItem({ linkTo, title }: NavBarItemProps) {
   return (
-    <Link to={linkTo} className='font-bold p-2 hover:bg-purple-400 focus:bg-purple-400'>
+    <Link to={linkTo} className='text-white font-bold p-2 hover:bg-purple-400 focus:bg-purple-400'>
       {title}
     </Link>
   );

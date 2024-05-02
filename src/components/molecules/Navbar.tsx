@@ -7,7 +7,7 @@ function Navbar() {
     { linkTo: '/blog', title: 'Blog' },
   ];
   return (
-    <nav className='w-full h-10 bg-slate-500 flex justify-evenly sticky top-0 bg-opacity-50 backdrop-blur-sm'>
+    <nav className='w-full h-fit py-2 bg-slate-700 flex justify-evenly sticky top-0 bg-opacity-50 backdrop-blur-sm z-20' >
       { navbarItems.map(
         (item) => <NavBarItem key={item.linkTo} linkTo={item.linkTo} title={item.title} />,
       )}
