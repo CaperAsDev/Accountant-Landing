@@ -34,7 +34,7 @@ function HomeWhyUs() {
         <picture className="absolute z-0 -right-5 top-0  h-full w-screen object-cover overflow-hidden brightness-50">
           <source media="(min-width: 1000px)" srcSet="deal-l.jpg" />
           <source media="(min-width: 700px)" srcSet="deal-m.jpg" />
-          <img src="deal-s.jpg" alt="close deal image" className="w-full h-full"/>
+          <img src="/deal-s.jpg" alt="close deal image" className="w-full h-full"/>
         </picture>
       </header>
       <div

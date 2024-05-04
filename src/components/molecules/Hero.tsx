@@ -6,9 +6,9 @@ function Hero() {
         <p className="text-ligth-0">Parrafo de Hero</p>
       </div>
       <picture className="brightness-50 object-cover w-full h-full ">
-        <source media="(min-width: 1000px)" srcSet="hero-l.jpg" />
-        <source media="(min-width: 700px)" srcSet="hero-m.jpg" />
-        <img src="hero-s.jpg" alt="Hero Image" className="w-full h-full"/>
+        <source media="(min-width: 1000px)" srcSet="/hero-l.jpg" />
+        <source media="(min-width: 700px)" srcSet="/hero-m.jpg" />
+        <img src="/hero-s.jpg" alt="Hero Image" className="w-full h-full"/>
       </picture>
     </section>
   );
