@@ -5,7 +5,7 @@ import { ContactCTA } from '../atoms';
 
 function CallToActions() {
   return (
-    <div className='flex justify-evenly'>
+    <div className='sm:flex justify-evenly hidden'>
       <ContactCTA title="(+57) 323 223 2323" footer="Contador en linea" className='border-r-2'>
         <BsFillTelephoneFill className='w-5 h-5 ' />
       </ContactCTA>

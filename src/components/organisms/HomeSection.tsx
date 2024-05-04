@@ -1,10 +1,11 @@
 interface HomeSectionProps {
   children: React.ReactNode
+  className?: string
 }
 
-function HomeSection({ children }: HomeSectionProps) {
+function HomeSection({ children, className = 'bg-ligth-0' }: HomeSectionProps) {
   return (
-    <section className="w-full h-fit bg-white p-5">
+    <section className={`w-full h-fit p-5 ${className}`} >
       {children}
     </section>
   );

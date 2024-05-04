@@ -4,11 +4,9 @@ import { CallToActions, Navbar } from '../molecules';
 function Header() {
   return (
     <>
-    <header className='w-full h-fit'>
-      <div className='bg-white'>
+    <header className='w-full h-fit bg-dark-1 p-5 grid place-items-center'>
         <Logo />
         <CallToActions />
-      </div>
     </header>
     <Navbar />
     </>

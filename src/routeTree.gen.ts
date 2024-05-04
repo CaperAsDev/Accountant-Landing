@@ -16,21 +16,21 @@ import { Route as rootRoute } from './routes/__root'
 
 // Create Virtual Routes
 
+const ServicesLazyImport = createFileRoute('/services')()
 const BlogLazyImport = createFileRoute('/blog')()
-const AboutLazyImport = createFileRoute('/about')()
 const IndexLazyImport = createFileRoute('/')()
 
 // Create/Update Routes
+
+const ServicesLazyRoute = ServicesLazyImport.update({
+  path: '/services',
+  getParentRoute: () => rootRoute,
+} as any).lazy(() => import('./routes/services.lazy').then((d) => d.Route))
 
 const BlogLazyRoute = BlogLazyImport.update({
   path: '/blog',
   getParentRoute: () => rootRoute,
 } as any).lazy(() => import('./routes/blog.lazy').then((d) => d.Route))
-
-const AboutLazyRoute = AboutLazyImport.update({
-  path: '/about',
-  getParentRoute: () => rootRoute,
-} as any).lazy(() => import('./routes/about.lazy').then((d) => d.Route))
 
 const IndexLazyRoute = IndexLazyImport.update({
   path: '/',
@@ -45,12 +45,12 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexLazyImport
       parentRoute: typeof rootRoute
     }
-    '/about': {
-      preLoaderRoute: typeof AboutLazyImport
-      parentRoute: typeof rootRoute
-    }
     '/blog': {
       preLoaderRoute: typeof BlogLazyImport
+      parentRoute: typeof rootRoute
+    }
+    '/services': {
+      preLoaderRoute: typeof ServicesLazyImport
       parentRoute: typeof rootRoute
     }
   }
@@ -60,8 +60,8 @@ declare module '@tanstack/react-router' {
 
 export const routeTree = rootRoute.addChildren([
   IndexLazyRoute,
-  AboutLazyRoute,
   BlogLazyRoute,
+  ServicesLazyRoute,
 ])
 
 /* prettier-ignore-end */

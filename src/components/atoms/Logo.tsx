@@ -2,10 +2,8 @@ import { Link } from '@tanstack/react-router';
 
 function Logo() {
   return (
-    <Link>
-      <picture className='w-full'>
-        <img src="https://contadoresasociadosjg.com/wp-content/uploads/2022/04/logo-contadores-asociados-512x512px-e1651016096591.png" alt="Logo" />
-      </picture>
+    <Link to='/' className='block w-fit object-contain overflow-hidden h-16'>
+      <img src="Logo-H_Ligth.png" alt="Logo" className='w-full h-full' />
     </Link>
   );
 }

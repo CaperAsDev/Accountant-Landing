@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import { BsFillTelephoneFill } from 'react-icons/bs';
 import { IoMdMail } from 'react-icons/io';
 
@@ -16,11 +17,13 @@ function Footer() {
   ];
 
   return (
-    <footer className="w-full h-fit bg-white p-5">
-      <article>
+    <footer className="w-full h-fit bg-dark-1 p-5">
+      <article className=' grid gap-4'>
         <Logo />
-        <p>Ofrecemos....</p>
-        <p>Ponte en contacto, te resolveremos cualquier inquietud</p>
+        <p className='text-ligth-0 font-extralight' >
+          Ofrecemos servicios de contabilidad para Pymes en Bogotá, ayudamos a tu empresa para que ahorres tiempo y dinero, con más de 18 años de experiencia
+        </p>
+        <p className='text-ligth-2' >Ponte en contacto, te resolveremos cualquier inquietud</p>
         <li className='list-none'>
           {anchors.map(
             (anchor) => <Anchor
@@ -33,7 +36,6 @@ function Footer() {
           )}
         </li>
       </article>
-      Mi footer
     </footer>
   );
 }
