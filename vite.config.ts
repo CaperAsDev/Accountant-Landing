@@ -22,5 +22,6 @@ export default defineConfig(({
       TanStackRouterVite(),
     ],
     base: '/Accountant-Landing/',
+    publicDir: '/Accountant-Landing/public',
   };
 });
