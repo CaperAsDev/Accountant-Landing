@@ -2,7 +2,6 @@ import { Link } from '@tanstack/react-router';
 
 function Logo() {
   const baseUrl = import.meta.env.BASE_URL || '';
-  console.log('baseUrl: ', baseUrl);
 
   return (
     <Link to='/' className='block w-fit object-contain overflow-hidden h-16'>

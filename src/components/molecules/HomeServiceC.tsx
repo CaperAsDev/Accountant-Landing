@@ -4,10 +4,12 @@ import { BsGraphUpArrow, BsBuildingsFill } from 'react-icons/bs';
 import { FaShop, FaBuildingUser } from 'react-icons/fa6';
 
 function HomeServiceC() {
+  const baseUrl = import.meta.env.BASE_URL || '';
+  // {`${baseUrl}`}
   const services = [
     {
       title: 'Servicio de Contabilidad para PYMES',
-      image: '/industry-1.jpg',
+      image: `${baseUrl}industry-1.jpg`,
       text: 'Personas que estén en el Régimen Común y hagan actividades comerciales.',
       icon: <IoPersonCircle className='w-10 h-10 text-contrast' />,
       link: {
@@ -17,7 +19,7 @@ function HomeServiceC() {
     },
     {
       title: 'Servicio de Outsourcing Contable',
-      image: '/industry-2.jpg',
+      image: `${baseUrl}industry-2.jpg`,
       text: 'Para microempresas que cuenten con personal NO superior a 10 trabajadores. Pequeñas empresas que tengan personal entre 11 y 50 trabajadores.',
       icon: <BsGraphUpArrow className='w-10 h-10 text-contrast' />,
       link: {
@@ -27,7 +29,7 @@ function HomeServiceC() {
     },
     {
       title: 'Servicio de Contabilidad para emprendedores',
-      image: '/industry-3.jpg',
+      image: `${baseUrl}industry-3.jpg`,
       text: 'Para nosotros la Clave y ÉXITO del País es aportar Valor a aquellos que están Comenzando su negocio.',
       icon: <FaShop className='w-10 h-10 text-contrast' />,
       link: {
@@ -37,7 +39,7 @@ function HomeServiceC() {
     },
     {
       title: 'Servicio de Contabilidad para Empresas de Servicios',
-      image: '/industry-4.jpg',
+      image: `${baseUrl}industry-4.jpg`,
       text: 'Ayudamos a empresas en distintos sectores e industrias de forma eficiente y estratégica.',
       icon: <BsBuildingsFill className='w-10 h-10 text-contrast' />,
       link: {
@@ -47,7 +49,7 @@ function HomeServiceC() {
     },
     {
       title: 'Servicio de Contabilidad para Organizaciones sin ánimo de lucro.',
-      image: '/industry-5.jpg',
+      image: `${baseUrl}industry-5.jpg`,
       text: 'Ayudamos a Organizaciones sin ánimo de lucro.',
       icon: <FaBuildingUser className='w-10 h-10 text-contrast' />,
       link: {
