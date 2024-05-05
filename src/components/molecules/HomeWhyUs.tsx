@@ -23,8 +23,8 @@ function HomeWhyUs() {
     },
   ];
   return (
-    <article>
-      <header className='relative w-full h-fit'>
+    <article className="lg:grid lg:place-items-center">
+      <header className=' w-full h-fit md:p-5 lg:p-10 left-0 overflow-hidden'>
         <div className="relative z-10 py-4">
           <h3 className='font-bold text-3xl text-ligth-0 my-4 border-l-2 pl-2 border-contrast'>
             ¿Por Qué Elegirnos Y Cómo Trabajamos?
@@ -33,14 +33,14 @@ function HomeWhyUs() {
             Somos UNO de los mejores Servicios contables para PYMES que existen en Bogotá, también ofrecemos servicios de revisorías fiscales y tributaros.
           </p>
         </div>
-        <picture className="absolute z-0 -right-5 top-0  h-full w-screen object-cover overflow-hidden brightness-50">
+        <picture className="absolute z-0 top-0 left-0  max-h-80 min-h-56 h-1/4 w-screen overflow-hidden brightness-50">
           <source media="(min-width: 1000px)" srcSet={`${baseUrl}deal-l.jpg`} />
           <source media="(min-width: 700px)" srcSet={`${baseUrl}deal-m.jpg`} />
-          <img src={`${baseUrl}deal-s.jpg`} alt="close deal image" className="w-full h-full"/>
+          <img src={`${baseUrl}deal-s.jpg`} alt="close deal image" className="object-cover w-full h-full"/>
         </picture>
       </header>
       <div
-        className="grid gap-4 mt-5"
+        className="grid gap-4 mt-5 lg:grid-cols-3 lg:max-w-4xl"
       >
         {reasons.map((reason) => (
           <div

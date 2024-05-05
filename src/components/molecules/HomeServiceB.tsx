@@ -21,19 +21,19 @@ function HomeServiceB() {
 
   ];
   return (
-    <article>
-      <header className=''>
-        <h3 className='font-bold text-3xl text-contrast my-4 border-l-2 pl-2 border-contrast'>Servicios Profesionales de Contabilidad</h3>
-        <p className='text-center text-ligth-0 font-extralight'>
+    <article className='lg:flex lg:gap-5 py-5 md:py-7 lg:py-10 xl:py-14'>
+      <header className='grid gap-2 sm:gap-4 lg:place-content-center'>
+        <h3 className='font-bold text-3xl text-ligth-0 my-4 border-l-2 pl-2 border-contrast lg:self-start'>Servicios Profesionales de Contabilidad</h3>
+        <p className='text-center text-ligth-0 font-extralight lg:text-start'>
         Conoce cuáles son nuestros servicios contables para PYMES en Bogotá y como podemos ayudarte
         , no dudes en COMUNICARTE con nosotros, responderemos en el menor tiempo posible.
         </p>
-        <Link to='/services' className='bg-contrast rounded-md p-5 my-3 grid place-items-center'>
+        <Link to='/services' className='bg-contrast rounded-md p-5 my-3 grid place-items-center lg:self-end'>
           <span className='text-dark-1 text-center'>Conoce nuestras soluciones contables</span>
         </ Link>
       </header>
       <div
-      className="grid gap-2 mt-6">
+      className="grid gap-2 mt-6 sm:grid-cols-2 lg:mt-0">
         {services.map((service) => (
           <div className='grid rounded-md p-5 py-10 gap-2 place-content-center place-items-center w-full min-h-20 max-h-fit bg-ligth-0 border-t-4 border-contrast border-opacity-40 hover:border-opacity-100' key={service.title}>
             <h4 className='font-bold text-xl text-center text-contrast'>{service.title}</h4>

@@ -7,7 +7,7 @@ interface NavBarItemProps {
 
 function NavBarItem({ linkTo, title }: NavBarItemProps) {
   return (
-    <Link to={linkTo} className='text-ligth-0 font-bold p-2 hover:text-ligth-2 focus:text-ligth-2 hover:bg-dark-1 focus:bg-dark-1'>
+    <Link to={linkTo} className='text-ligth-0 font-medium p-2 hover:text-ligth-2 focus:text-ligth-2 hover:bg-dark-1 focus:bg-dark-1'>
       {title}
     </Link>
   );

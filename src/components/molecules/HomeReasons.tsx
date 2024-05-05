@@ -34,8 +34,8 @@ function HomeReasons() {
 
   ];
   return (
-    <article>
-      <header className=''>
+    <article className="lg:flex lg:justify-between w-full">
+      <header className='lg:max-w-sm'>
         <h3 className='font-bold text-3xl text-dark-1 my-4 border-l-2 pl-2 border-contrast'>
         Estas Son Las Razones Por La Cual Deberías Trabajar Con Nosotros
         </h3>

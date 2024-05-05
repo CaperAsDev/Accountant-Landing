@@ -11,7 +11,7 @@ import { HomeSection } from '../organisms';
 
 function Home() {
   return (
-    <main>
+    <main className='bg-ligth-0 grid gap-y-5 sm:gap-y-7 md:gap-y-10 lg:gap-y-14'>
       <Hero />
       <HomeSection>
         <HomeServiceA />
