@@ -2,8 +2,8 @@ import { NavBarItem } from '../atoms';
 
 function Navbar() {
   const navbarItems = [
-    { linkTo: '/services', title: 'Servicios' },
     { linkTo: '/', title: 'Inicio' },
+    { linkTo: '/services', title: 'Servicios' },
     { linkTo: '/blog', title: 'Blog' },
   ];
   return (

@@ -12,8 +12,8 @@ interface Anchortype {
 
 function Footer() {
   const anchors: Array<Anchortype> = [
-    { href: 'tel:+123456789', text: '123456789', icon: <BsFillTelephoneFill /> },
-    { href: 'mailto:m.bluth@example.com', text: 'bluth@example.com', icon: <IoMdMail /> },
+    { href: 'tel:+573028565231', text: '+57 302 8565231', icon: <BsFillTelephoneFill /> },
+    { href: 'mailto:excellentia_consulting@outlook.com', text: 'excellentia_consulting@outlook.com', icon: <IoMdMail /> },
   ];
 
   return (

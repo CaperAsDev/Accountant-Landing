@@ -28,7 +28,7 @@ function HomeServiceB() {
         Conoce cuáles son nuestros servicios contables para PYMES en Bogotá y como podemos ayudarte
         , no dudes en COMUNICARTE con nosotros, responderemos en el menor tiempo posible.
         </p>
-        <Link to='/services' className='bg-contrast rounded-md p-5 my-3 grid place-items-center lg:self-end'>
+        <Link to='/services' className='bg-contrast rounded-md p-5 my-3 grid place-items-center lg:self-end hover:scale-105 focus:scale-105 transition-transform'>
           <span className='text-dark-1 text-center'>Conoce nuestras soluciones contables</span>
         </ Link>
       </header>

@@ -64,14 +64,14 @@ function HomeServiceC() {
       <div
       className="grid place-items-center sm:grid-cols-2 lg:max-w-2xl">
           {services.map((service) => (
-              <button className='relative group w-full h-full overflow-hidden sm:last:col-span-2'>
+              <button key={service.image} className='relative group w-full h-full overflow-hidden sm:last:col-span-2'>
                 <div className='grid place-items-center gap-3 group-focus:opacity-0 group-hover:opacity-0 relative z-10 p-5 py-10 transition-opacity duration-300'>
                   {service.icon}
                   <h4 className='text-ligth-0 font-bold text-2xl text-center'>{service.title}</h4>
                 </div>
                 <div className='translate-x-full grid place-items-center group-hover:translate-x-0 group-focus-visible:translate-x-0 absolute z-10 inset-0 p-5 transition-transform duration-300'>
                   <p className='text-ligth-0 text-center font-extralight'>{service.text}</p>
-                  <Link to={service.link.to} className='text-ligth-2 border-2 p-2 border-contrast flex items-center justify-center gap-2'>
+                  <Link to={service.link.to} className='text-ligth-2 border-2 p-2 border-contrast flex items-center justify-center gap-2 hover:bg-ligth-2 focus:bg-ligth-2 hover:text-dark-1 focus:text-dark-1 hover:bg-opacity-50'>
                     <span className='w-28'>
                       {service.link.text.toUpperCase()}
                     </span>

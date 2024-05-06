@@ -40,7 +40,7 @@ function HomeWhyUs() {
         </picture>
       </header>
       <div
-        className="grid gap-4 mt-5 lg:grid-cols-3 lg:max-w-4xl"
+        className="relative z-10 grid gap-4 lg:grid-cols-3 lg:max-w-4xl"
       >
         {reasons.map((reason) => (
           <div
